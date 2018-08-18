@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>乐淘电商</title>
+      <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+      <link rel="stylesheet" href="./css/common.css">
+      <link rel="stylesheet" href="./lib/bootstrap-validator/css/bootstrapValidator.min.css">
+      <link rel="stylesheet" href="./lib/nprogress/nprogress.css">
+    </head>
+    
+    <body>
+      <!-- 左侧侧边栏 -->
+      <div class="lt_aside">
+        <!-- 标题 -->
+        <div class="brand">
+          <a href="#">黑马25期</a>
+        </div>
+        <!-- 用户信息 -->
+        <div class="user">
+          <img src="./images/222.jpg" alt="">
+          <p>超级管理员</p>
+        </div>
+        <!-- 导航 -->
+        <div class="nav">
+          <ul>
+            <li>
+              <a href="user.html" >
+                <span class="glyphicon glyphicon-user"></span>
+                <span>用户管理</span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:;" class="category">
+                <span class="glyphicon glyphicon-list"></span>
+                <span>分类管理</span>
+              </a>
+              <div class="child" style="display: none">
+                <a href="first.html">一级分类</a>
+                <a href="second.html">二级分类</a>
+              </div>
+            </li>
+            <li>
+              <a href="product.html" class="current">
+                <span class="glyphicon glyphicon-tags"></span>
+                <span>商品管理</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 右侧主体部分 -->
+      <div class="lt_main">
+        <!-- 顶部 -->
+        <div class="lt_topbar">
+          <a class="pull-left icon_menu" href="#">
+            <span class="glyphicon glyphicon-align-justify"></span>
+          </a>
+          <a class="pull-right icon_logout" href="#">
+            <span class="glyphicon glyphicon-log-out"></span>
+          </a>
+        </div>
+        <!-- 路径导航，流式布局 -->
+        <div class="container-fluid">
+          <ol class="breadcrumb">
+            <li>
+              <a href="index.html">管理系统</a>
+            </li>
+            <li class="active">商品管理</li>             
+          </ol>
+        </div>
+      </div>
+      <!-- 模态框Modal -->
+      <div class="modal fade" id="logoutModal" tabindex="-1">
+        <div class="modal-dialog modal-sm" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <h4 class="modal-title" id="myModalLabel">温馨提示</h4>
+            </div>
+            <div class="modal-body">
+              <span class="glyphicon glyphicon-info-sign"></span>您确定要退出后台管理系统吗？
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+              <button type="button" class="btn btn-primary logoutBtn">退出</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    
+    
+      <script src="./lib/jquery/jquery.min.js"></script>
+      <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+      <script src="./lib/bootstrap-validator/js/bootstrapValidator.min.js"></script>
+      <script src="./lib/nprogress/nprogress.js"></script>
+      <script src="./js/common.js"></script>
+    </body>
+    
+    </html>
+</body>
+</html>
