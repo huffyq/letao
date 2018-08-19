@@ -83,8 +83,8 @@ ul {
 }
 /* 右侧主体部分 */
 .lt_main {
-  height: 1000px;
-  background-color: hotpink;
+  /* height: 1000px; */
+  /* background-color: hotpink; */
   padding-left:180px;
   padding-top:50px;
   transition:all 1s;
@@ -116,6 +116,11 @@ ul {
 .lt_main .container-fluid {
   margin-top:20px;
 }
+/* ECharts图表 */
+.echarts {
+  padding-left: 15px;
+}
+
 /* 模态框 */
 .modal-body {
   color:#A94442;

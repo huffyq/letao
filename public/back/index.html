@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="./css/common.css">
   <link rel="stylesheet" href="./lib/bootstrap-validator/css/bootstrapValidator.min.css">
   <link rel="stylesheet" href="./lib/nprogress/nprogress.css">
+ 
 </head>
 
 <body>
@@ -71,7 +72,15 @@
         <li class="active">首页 </li>       
       </ol>
     </div>
+
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom  -->
+    <div class="echarts">
+      <div id="box1" class="pull-left" style="width: 48%;height:400px;"></div>
+      <div id="box2" class="pull-right" style="width: 48%;height:400px;"></div>
+    </div>
+
   </div>
+  
   <!-- 模态框Modal -->
   <div class="modal fade" id="logoutModal" tabindex="-1">
     <div class="modal-dialog modal-sm" role="document">
@@ -93,12 +102,16 @@
     </div>
   </div>
 
+ 
+ 
 
 
   <script src="./lib/jquery/jquery.min.js"></script>
   <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
   <script src="./lib/bootstrap-validator/js/bootstrapValidator.min.js"></script>
   <script src="./lib/nprogress/nprogress.js"></script>
+  <script src="./js/common.js"></script>
+  <script src="./lib/echarts/echarts.min.js"></script>
   <script src="./js/index.js"></script>
 </body>
 
