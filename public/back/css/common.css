@@ -19,6 +19,12 @@ ul {
   list-style: none;
 }
 
+.table.table-bordered th,
+.table.table-bordered td {
+  text-align: center;
+  vertical-align: middle;
+}
+
 /* 首页 */
 /* 左侧侧边栏 */
 .lt_aside {
@@ -117,7 +123,7 @@ ul {
   margin-top:20px;
 }
 /* ECharts图表 */
-.echarts {
+.pl-15 {
   padding-left: 15px;
 }
 
@@ -125,3 +131,6 @@ ul {
 .modal-body {
   color:#A94442;
 }
+
+
+
