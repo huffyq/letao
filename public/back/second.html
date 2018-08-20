@@ -145,7 +145,7 @@
 
             <div class="form-group">
               <div class="dropdown">
-                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
                     <span id="dropdownText">请选择一级分类</span>
                     <span class="caret"></span>
                 </button>
@@ -154,12 +154,19 @@
                     <a href="#">Action</a>
                   </li>                 -->
                 </ul>
+
+                <!-- 隐藏域 -->
+                <input type="hidden" name="categoryId"> 
+
+                <!-- 火热的品牌 hot=1 -->
+                <input type="hidden" name="hot" value="1">
+
               </div>
 
             </div>
 
             <div class="form-group">
-              <input type="text" class="form-control" name="categoryName" placeholder="请输入二级分类">
+              <input type="text" class="form-control" name="brandName" placeholder="请输入二级分类">
             </div>
 
             <div class="form-group">
@@ -169,11 +176,13 @@
                  data-url 后台接口地址
                  labal里的for和input的id值相同，提交表单就有绑定关系了
             -->
-              <input type="file" name="pic1" data-url="/category/addSecondCategoryPic" id="fileupload" style="display: none;">
+              <input type="file" name="pic1" data-url="/category/addSecondCategoryPic" id="fileupload" style="display: none;">              
             </div>
 
             <div class="form-group imgBox">
-              <img src="./images/222.jpg" width="100px" alt="">
+              <img src="./images/none.png" width="100px" alt="">
+              <!-- 隐藏域 -->
+              <input type="hidden" name="brandLogo">
             </div>
 
           </div>
@@ -194,7 +203,7 @@
       <td>{{ v.categoryName }}</td>
       <td>{{ v.brandName }}</td>
       <td>
-        <img src="{{v.brandLogo}}" height="50px" alt="">
+        <img src="{{ v.brandLogo }}" height="50px" alt="">
       </td>            
     </tr>  
     {{ /each }}
@@ -204,7 +213,7 @@
   <script type="text/html" id="dropdownTpl">
   {{ each rows v i }}
   <li>
-    <a href="#">{{ v.categoryName }}</a>
+    <a href="#" data-id="{{ v.id }}">{{ v.categoryName }}</a>
   </li>
   {{ /each }}
   </script>
