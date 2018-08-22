@@ -1,0 +1,34 @@
+/* 左侧导航 */
+.lt_main .cate_left {
+  width: 90px;
+  height: 100%;
+  float: left;
+  position: relative;
+}
+
+.cate_left ul li a {
+  display: block;
+  width: 90px;
+  height: 50px;
+  background-color: #E3E4E5;
+  text-align: center;
+  line-height: 50px;
+  color:#666;
+  border-right:1px solid #ccc;
+  border-bottom:1px solid #ccc;  
+}
+.cate_left ul li a.current {
+  background-color:#fff;
+  border-right:none;
+}
+/* 右侧导航 */
+.lt_main .cate_right {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.cate_right ul li {
+  float: left;
+  width: 33.33%;
+  text-align: center;
+}
